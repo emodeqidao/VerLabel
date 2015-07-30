@@ -3,8 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "Ver Label"
 
-  s.description  = <<-DESC
-                   让label 的字体置顶
+  s.description  = "label font top"
 
   s.homepage     = "https://github.com/emodeqidao/VerLabel"
   s.license      = 'MIT'
@@ -12,9 +11,10 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
 
   s.source       = { :git => "https://github.com/emodeqidao/VerLabel.git", :tag => s.version.to_s }
-  s.source_files  = 'VerLabel', 'VerLabel/**/*.{h,m}'
+  s.source_files  = 'VerLabel/*'
+  s.framework = 'UIKit' 
 
+	s.requires_arc = true 	
 
-EOS
 
 end
